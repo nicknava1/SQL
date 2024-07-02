@@ -6,16 +6,23 @@ In this project, I will show you how to use filters in SQL queries to find the d
 
 ![1](https://github.com/nicknava1/SQL/blob/main/1.png)
 
-The team detected unusual login activity after normal business hours. There should be no attempts being made after 6:00PM, so I selected all data FROM log_in_attempts WHERE login_time > ‘18:00’ and success = FALSE.
+An IDS notified the team that there have been numerous failed log-in attempts after hours. There should be no attempts being made after 6:00PM, so I selected all data FROM log_in_attempts WHERE login_time > ‘18:00’ and success = FALSE.
+
+<b><p>SELECT *</p></b>
+<b><p>FROM log_in_attempts</p></b>
+<b><p>WHERE login_time > ‘18:00’ AND success = FALSE</p></b>
 
 This query displayed login attempts after hours that were unsuccessful. These events can now be further investigated.
-
 
 <h2>Obtain activity on specific dates</h2>
 
 ![2](https://github.com/nicknava1/SQL/blob/main/2.png)
 
 In this exercise, I needed to find all login attempts made on certain days. Once again I decided to SELECT all data FROM log_in_attempts. This time, however, I used WHERE login_date = ‘2022-05-09’ OR  log_in_date = ‘2022-05-08’.
+
+<b><p>SELECT *</p></b>
+<b><p>FROM log_in_attempts</p></b>
+<b><p>WHERE login_date = ‘2022-05-09’ OR  log_in_date = ‘2022-05-08’</p></b>
 
 This query displayed only login attempts made on 5/8/22 or 5/9/22.
 
