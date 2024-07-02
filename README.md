@@ -35,4 +35,3 @@ Updating marketing devices
 In this scenario, the organization wanted to update specific company devices. I was asked to obtain the device information of all employees that are in the marketing department and located in the East office building. This time I selected FROM employees. Then I filtered WHERE department = ‘Marketing’ and office LIKE ‘East%’. 
  
 Since the office column also contained office numbers, I needed to include the % wildcard in my query. With this query, I obtained the requested information.
-Retrieve employees in Multiple departments
