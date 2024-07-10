@@ -33,7 +33,6 @@ In this scenario, I was tasked with finding all attempts that were made outside 
 ![3](https://github.com/nicknava1/SQL/blob/main/3.png)
 
 The % wildcard was necessary because the database was not properly normalized. It contained both MEX and MEXICO within the country table. This properly filtered out all instances of Mexico from the results.
-Updating marketing devices
 
 <h2>Performing an Asset Inventory for Vulnerability Management</h2>
 
